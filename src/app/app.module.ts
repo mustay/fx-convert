@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ConverterComponent } from '../converter/converter.component';
-import { ApiService } from '../services/api.service';
 import { ConverterService } from '../converter/converter.service'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -38,7 +37,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],
-  providers: [ApiService, ConverterService],
+  providers: [ConverterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

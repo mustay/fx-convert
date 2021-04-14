@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { ApiService } from 'src/services/api.service';
 import { ConverterService } from './converter.service';
 
 

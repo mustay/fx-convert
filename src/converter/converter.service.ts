@@ -1,6 +1,5 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ApiService } from 'src/services/api.service';
 
 
 
@@ -687,7 +686,7 @@ export class ConverterService {
   access_key = '74b43a83dec3079f79e5b77316aa346f'
   ratesApiUrl = 'http://api.exchangeratesapi.io/v1/latest';
 
-  constructor(private apiService: ApiService, private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   fetchRates() {
     return this.http.get(`${this.ratesApiUrl}?access_key=${this.access_key}`);
