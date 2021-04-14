@@ -1,0 +1,11 @@
+.converter-container {
+    display: flex;
+}
+
+.button-container {
+    display: flex;
+}
+
+.convert-button {
+    margin-left: auto;
+}
